@@ -10,6 +10,8 @@
 		800F8043270B88A500A118F6 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F8042270B88A500A118F6 /* Double+Extension.swift */; };
 		800F8045270B8C4D00A118F6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F8044270B8C4D00A118F6 /* SettingsTableViewController.swift */; };
 		800F8047270B8CDE00A118F6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F8046270B8CDE00A118F6 /* SettingsViewModel.swift */; };
+		801052D4271DD425007CC5A7 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801052D3271DD425007CC5A7 /* BindingTextField.swift */; };
+		801052D6271DD7E6007CC5A7 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801052D5271DD7E6007CC5A7 /* AddCityViewModel.swift */; };
 		8065A11426DEB64F00C55537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065A11326DEB64F00C55537 /* AppDelegate.swift */; };
 		8065A11B26DEB64F00C55537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8065A11926DEB64F00C55537 /* Main.storyboard */; };
 		8065A11D26DEB65000C55537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8065A11C26DEB65000C55537 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		800F8042270B88A500A118F6 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		800F8044270B8C4D00A118F6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = "Live Weather/ViewControllers/SettingsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		800F8046270B8CDE00A118F6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		801052D3271DD425007CC5A7 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		801052D5271DD7E6007CC5A7 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
 		8065A11026DEB64F00C55537 /* Live Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8065A11326DEB64F00C55537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8065A11A26DEB64F00C55537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		801052D2271DD3EB007CC5A7 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				801052D3271DD425007CC5A7 /* BindingTextField.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
 		8065A10726DEB64F00C55537 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		8065A11226DEB64F00C55537 /* Live Weather */ = {
 			isa = PBXGroup;
 			children = (
+				801052D2271DD3EB007CC5A7 /* Custom Controls */,
 				808A675027077FA50096B2AC /* Extension */,
 				808A674D27077EFD0096B2AC /* Utils */,
 				8096C13E270724A70089E663 /* ViewModel */,
@@ -141,6 +154,7 @@
 				8096C13F270724C40089E663 /* AddWeatherViewModel.swift */,
 				808A6753270783B70096B2AC /* WeatherListViewModel.swift */,
 				800F8046270B8CDE00A118F6 /* SettingsViewModel.swift */,
+				801052D5271DD7E6007CC5A7 /* AddCityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,6 +243,8 @@
 				808733F926E6A27E00683ADE /* WeatherTableViewController.swift in Sources */,
 				8096C140270724C40089E663 /* AddWeatherViewModel.swift in Sources */,
 				808733FB26E6A32A00683ADE /* AddCityViewController.swift in Sources */,
+				801052D6271DD7E6007CC5A7 /* AddCityViewModel.swift in Sources */,
+				801052D4271DD425007CC5A7 /* BindingTextField.swift in Sources */,
 				800F8043270B88A500A118F6 /* Double+Extension.swift in Sources */,
 				80ACD9C726F0BC72004393F0 /* WebService.swift in Sources */,
 				8096C13D270721D20089E663 /* Weather.swift in Sources */,

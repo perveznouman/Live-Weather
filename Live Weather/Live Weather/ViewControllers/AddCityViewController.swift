@@ -13,7 +13,9 @@ protocol AddWeatherDelegate {
 
 class AddCityViewController: UIViewController {
 
-    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var cityTextField: BindingTextField! 
+    
+    private var addCityViewModel = AddCityViewModel()
     private var addWeatherVm = AddWeatherViewModel()
     var delegate: AddWeatherDelegate!
     
