@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		808A6754270783B70096B2AC /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808A6753270783B70096B2AC /* WeatherListViewModel.swift */; };
 		8096C13D270721D20089E663 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096C13C270721D20089E663 /* Weather.swift */; };
 		8096C140270724C40089E663 /* AddWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096C13F270724C40089E663 /* AddWeatherViewModel.swift */; };
+		80A9618E272319FD00B082AB /* WeatherListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9618D272319FD00B082AB /* WeatherListDataSource.swift */; };
 		80ACD9C726F0BC72004393F0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACD9C626F0BC72004393F0 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		808A6753270783B70096B2AC /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		8096C13C270721D20089E663 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		8096C13F270724C40089E663 /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
+		80A9618D272319FD00B082AB /* WeatherListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListDataSource.swift; sourceTree = "<group>"; };
 		80ACD9C626F0BC72004393F0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		8065A11226DEB64F00C55537 /* Live Weather */ = {
 			isa = PBXGroup;
 			children = (
+				80A9618C272319C500B082AB /* Data Source */,
 				801052D2271DD3EB007CC5A7 /* Custom Controls */,
 				808A675027077FA50096B2AC /* Extension */,
 				808A674D27077EFD0096B2AC /* Utils */,
@@ -159,6 +162,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		80A9618C272319C500B082AB /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				80A9618D272319FD00B082AB /* WeatherListDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
 		80ACD9C526F0BC46004393F0 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +214,7 @@
 				};
 			};
 			buildConfigurationList = 8065A10B26DEB64F00C55537 /* Build configuration list for PBXProject "Live Weather" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -251,6 +262,7 @@
 				800F8047270B8CDE00A118F6 /* SettingsViewModel.swift in Sources */,
 				800F8045270B8C4D00A118F6 /* SettingsTableViewController.swift in Sources */,
 				8065A11426DEB64F00C55537 /* AppDelegate.swift in Sources */,
+				80A9618E272319FD00B082AB /* WeatherListDataSource.swift in Sources */,
 				808A674F27077F250096B2AC /* Constants.swift in Sources */,
 				808A6754270783B70096B2AC /* WeatherListViewModel.swift in Sources */,
 			);
