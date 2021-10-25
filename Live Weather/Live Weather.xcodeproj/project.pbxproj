@@ -26,6 +26,7 @@
 		8096C140270724C40089E663 /* AddWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096C13F270724C40089E663 /* AddWeatherViewModel.swift */; };
 		80A9618E272319FD00B082AB /* WeatherListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9618D272319FD00B082AB /* WeatherListDataSource.swift */; };
 		80ACD9C726F0BC72004393F0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACD9C626F0BC72004393F0 /* WebService.swift */; };
+		80ACF9F727273AC700D5B9E3 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACF9F627273AC700D5B9E3 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8096C13F270724C40089E663 /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
 		80A9618D272319FD00B082AB /* WeatherListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListDataSource.swift; sourceTree = "<group>"; };
 		80ACD9C626F0BC72004393F0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		80ACF9F627273AC700D5B9E3 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				80A9618D272319FD00B082AB /* WeatherListDataSource.swift */,
+				80ACF9F627273AC700D5B9E3 /* TableViewDataSource.swift */,
 			);
 			path = "Data Source";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				808733FE26E6A64D00683ADE /* WeatherTableViewCell.swift in Sources */,
 				808A675227077FD20096B2AC /* String+Extension.swift in Sources */,
+				80ACF9F727273AC700D5B9E3 /* TableViewDataSource.swift in Sources */,
 				808733F926E6A27E00683ADE /* WeatherTableViewController.swift in Sources */,
 				8096C140270724C40089E663 /* AddWeatherViewModel.swift in Sources */,
 				808733FB26E6A32A00683ADE /* AddCityViewController.swift in Sources */,
