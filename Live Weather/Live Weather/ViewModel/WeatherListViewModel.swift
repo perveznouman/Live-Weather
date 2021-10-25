@@ -10,7 +10,7 @@ import Foundation
 
 class WeatherListViewModel {
     
-    private var weatherViewModels = [WeatherViewModel]()
+    private(set) var weatherViewModels = [WeatherViewModel]()
     
     func addWeatherViewModel (_ weatherViewModel: WeatherViewModel) {
         weatherViewModels.append(weatherViewModel)
@@ -52,11 +52,11 @@ class WeatherListViewModel {
 
 class WeatherViewModel {
     let weatherResponse: WeatherResponse
-    var temperature: Double
+    var temperature: Int
     
     init(weather: WeatherResponse) {
         weatherResponse = weather
-        temperature = weather.main.temp
+        temperature = Int(weather.main.temp)
     }
     
     var city: String {

@@ -10,19 +10,20 @@ import UIKit
 class WeatherListDataSource: NSObject, UITableViewDataSource {
     
     var weatherListViewModel: WeatherListViewModel?
-    var cellIdentifier: String!
+    var cellIdentifier: String = "weatherReuseIdentifier"
     
     init(_ weatherListVM: WeatherListViewModel) {
         weatherListViewModel = weatherListVM
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return weatherListViewModel?.weatherViewModels.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        let _ = weatherListViewModel?.modelAt(indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! WeatherTableViewCell
+        let vm = (weatherListViewModel?.modelAt(indexPath.row))!
+        cell.configure(weatherViewModel: vm)
         return cell
     }
     
